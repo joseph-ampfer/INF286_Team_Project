@@ -15,7 +15,7 @@ body{
 }
 
 header{
-	position: fixed;
+	position: relative;
 	z-index: 999;
 	width: 100%;
 	
@@ -25,7 +25,7 @@ header{
 	
 	background-color: rgb(156 163 175);
 }
-
+/*
 nav{
 	flex-grow: 1;
 	max-width: 800px;
@@ -39,6 +39,48 @@ nav{
 	
 	padding: 0.25rem;
 }
+*/
+
+nav{
+	letter-spacing: 0.1em;
+	text-align: center;
+	/*padding-left: 2em;*/
+	position: relative;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav li{
+	padding: 0.5em;
+	display: block;
+}
+
+nav a:link{ color: #FFFFFF; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover { color: #D3DBEB; }
+nav p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav ul ul {
+	background-color: rgb(150 140 140);
+	position: absolute;
+	padding: 0;
+	display: none;
+}
+
+nav ul ul li {
+	width: 8em;
+	padding-left: 1em;
+	margin-left: 0;
+}
+
+nav li:hover ul { display: block; }
 
 .nav-logo{
 	height: 3rem;
@@ -140,6 +182,12 @@ form input[type="submit"]{
 	.titleContainer h1{
 		line-height: 30rem;
 	}
+	
+	nav > ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
 
 @media (min-width:71.001rem) {
@@ -164,5 +212,10 @@ form input[type="submit"]{
 	form p{
 		width: 35rem;/**/
 	}
+	
+	nav > ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
-	/*min-width: 30rem;*/
