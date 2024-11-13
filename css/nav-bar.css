@@ -10,3 +10,49 @@ header{
 	
 	background-color: rgb(156 163 175);
 }
+
+nav{
+	letter-spacing: 0.1em;
+	text-align: center;
+	position: relative;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav li{
+	padding: 0.5em;
+	display: block;
+}
+
+nav a:link{ color: #FFFFFF; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover { color: #D3DBEB; }
+
+nav p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav ul ul {
+	background-color: rgb(150 140 140);
+	position: absolute;
+	padding: 0;
+	display: none;
+}
+
+nav ul ul li {
+	width: 8em;
+	padding-left: 1em;
+	margin-left: 0;
+}
+
+nav li:hover ul { display: block; }
+
+.nav-logo{
+	height: 3rem;
+	margin-bottom: -0.125rem;
+}
