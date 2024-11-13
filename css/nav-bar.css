@@ -28,8 +28,12 @@ nav li{
 	display: block;
 }
 
-nav a:link{ color: #FFFFFF; }
-nav a:visited { color: #EAEAEA; }
+nav a{
+	text-decoration: none;
+}
+
+nav a:link, nav p{ color: white; }
+nav a:visited { color: #999999; }
 nav a:hover { color: #D3DBEB; }
 
 nav p {
