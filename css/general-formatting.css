@@ -1,4 +1,8 @@
 
+*{
+	box-sizing: border-box;
+}
+
 body{
 	display: flex;
 	position: relative;
@@ -8,7 +12,6 @@ body{
 	font-family: ui-sans-serif, system-ui, sans-serif;
 	font-feature-settings: normal;
 	font-variation-settings: normal;
-	box-sizing: border-box;
 }
 
 header{
