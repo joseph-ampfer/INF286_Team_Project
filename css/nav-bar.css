@@ -1,6 +1,6 @@
 
 header{
-	position: relative;
+	position: fixed;
 	z-index: 999;
 	width: 100%;
 	
@@ -62,4 +62,30 @@ nav li:hover ul { display: block; }
 .nav-logo{
 	height: 3rem;
 	margin-bottom: -0.125rem;
+}
+
+@media (max-width:42rem){
+	header{
+		position: relative;
+	}
+	
+	#header-spacer{
+		display: none;
+	}
+}
+
+@media ((min-width:42.001rem) and (max-width:71rem)) {
+	nav > ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+@media (min-width:71.001rem) {
+	nav > ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
