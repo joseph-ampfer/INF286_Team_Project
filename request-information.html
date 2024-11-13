@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request Information</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Request Information</title>
+	<!--<script src="https://cdn.tailwindcss.com"></script><!---->
+	<link href="css/general-formatting.css" rel="stylesheet" />
 </head>
 <body>
 	<header>
-		<nav class="flex flex-row flex-grow max-w-[800px] justify-between items-center p-1 text-white">
-		  <img src="https://www.uat.edu/themes/uat/images/uat-logo.png" class="h-12 -mb-2 " />
+		<nav>
+		  <img src="https://www.uat.edu/themes/uat/images/uat-logo.png" class = "nav-logo" />
 		  <a>Store</a>
 		  <a>Store</a>
 		  <a>Store</a>
@@ -16,5 +18,24 @@
 		  <a>Store</a>
 		</nav>
 	</header>
+	<div id="header-spacer"></div>
+	<main>
+		<section class="titleSection" style="background-image: url(https://www.uat.edu/themes/uat/images/request-info-banner.png);">
+			<h1>Request Information</h1>
+		</section>
+		
+		<section class="formContainer">
+			<form method="POST">
+				<h2>Request Info</h2>
+				<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions about UAT and your Advancing Technology degree program of interest.</p>
+				<input type="text" name="fname" placeholder="First Name" required/>
+				<input type="text" name="lname" placeholder="Last Name" required/>
+				<input type="tel" name="phoneNum" placeholder="Phone Number" required/>
+				<input type="email" name="email" placeholder="Email" required/>
+				<textarea name="message" placeholder="Type your question here!" required></textarea>
+				<input type="submit" value="Submit" />
+			</form>
+		</section>
+	</main>
 </body>
 </html>
