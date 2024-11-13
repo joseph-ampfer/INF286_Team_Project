@@ -5,7 +5,7 @@ body{
 	background-color: rgb(220, 200, 200);
 	flex-wrap: wrap;
 	margin: 0;
-	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: ui-sans-serif, system-ui, sans-serif;
 	font-feature-settings: normal;
 	font-variation-settings: normal;
 	box-sizing: border-box;
@@ -55,21 +55,19 @@ main{
 	flex-basis: 100%;
 }
 
-.titleSection{
+.titleContainer{
 	flex-shrink: 1;
 	flex-grow: 1;
-	min-width: 30rem;
-	height: 30rem;
+	
 	background-color: rgba(255, 100, 80, 1);
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.titleSection h1{
+.titleContainer h1{
 	margin: auto;
 	text-align: center;
-	line-height: 30rem;
 	
 	color: white;
 	font-weight: bold;
@@ -77,8 +75,7 @@ main{
 }
 
 .formContainer{
-	flex-grow: 1;
-	flex-shrink: 1;
+	flex: 1 1 0;
 }
 
 form{
@@ -120,3 +117,49 @@ form input[type="submit"]{
 	width: 100px;
 }
 
+@media (max-width:42rem){
+	.titleContainer{
+		flex-basis: 100%;
+		height: 20rem;
+	}
+	
+	.titleContainer h1{
+		line-height: 20rem;
+	}
+}
+
+@media ((min-width:42.001rem) and (max-width:71rem)) {
+	.titleContainer{
+		flex-basis: 100%;
+		height: 30rem;
+	}
+	
+	.titleContainer h1{
+		line-height: 30rem;
+	}
+}
+
+@media (min-width:71.001rem) {
+	
+	main{
+		justify-content: center;
+	}
+	
+	.titleContainer{
+		max-width: 50rem;
+		height: 30rem;
+	}
+	
+	.titleContainer h1{
+		line-height: 30rem;
+	}
+	
+	.formContainer{
+		flex-grow: 0;
+		margin-right: 3rem;
+	}
+	form p{
+		width: 35rem;/**/
+	}
+}
+	/*min-width: 30rem;*/
