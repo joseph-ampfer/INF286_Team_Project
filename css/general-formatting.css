@@ -25,26 +25,10 @@ header{
 	
 	background-color: rgb(156 163 175);
 }
-/*
-nav{
-	flex-grow: 1;
-	max-width: 800px;
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	
-	color: white;
-	
-	padding: 0.25rem;
-}
-*/
 
 nav{
 	letter-spacing: 0.1em;
 	text-align: center;
-	/*padding-left: 2em;*/
 	position: relative;
 }
 
