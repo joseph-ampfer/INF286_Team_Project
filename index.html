@@ -5,22 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UAT Redesign</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="css/nav-bar.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="flex-1 bg-green-500 relative">
-
-  <header class="fixed z-[999] flex flex-row justify-center w-full bg-gray-400">
-    <nav class="flex flex-row flex-grow max-w-[800px] justify-between items-center p-1 text-white">
-      <img src="https://www.uat.edu/themes/uat/images/uat-logo.png" class="h-12 -mb-2 " />
-      <a>Store</a>
-      <a>Store</a>
-      <a>Store</a>
-      <a>Store</a>
-      <a>Store</a>
-    </nav>
-  </header>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" class = "nav-logo"></a>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><p>Curriculum Info</p>
+					<ul>
+						<li><a href="#">Degrees</a></li>
+						<li><a href="#">Academic Catalog</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Request Information</a></li>
+				<li><p>News and Events</p>
+					<ul>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
   <main class="">
+    
     <section class="relative h-screen">
-
       <div class="absolute inset-0 -z-50">
         <video id="player" class="h-full w-full object-cover" autoplay muted loop playsinline >
           <source src="https://www.uat.edu/themes/uat/videos/uat-header-loop-v7.mp4" type="video/mp4">
@@ -28,45 +43,62 @@
       </div>
 
       <div class="relative z-10 flex items-center justify-center h-full">
-        <h1 class="text-white text-4xl font-bold">Ignite your passion</h1>
-      </div>
-      
-       
+        <h1 class="text-white text-6xl font-bold">Ignite your passion at UAT</h1>
+      </div>  
     </section>
     
-    <section class="relative h-screen bg-red-800">
-      <div class="flex flex-col items-center justify-center h-full">
+    <section class=" bg-red-800 pt-20 pb-40 ">
+      <div class="flex flex-col items-center justify-center h-full"  >
         <h1 class="text-white text-4xl font-bold">Find your fit</h1>
         <br><br>
-
-        <div class="max-w-[700px] max-h-[50vh] grid grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[1fr] ">
-          <div class="flex-1 bg-slate-500 aspect-square">
-            <h3 class="p-10">Business Innovation</h3>
+        <div class="max-w-[700px]  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[1fr] ">
+          <div class="flex-1 flex justify-center items-center bg-slate-50 p-10 aspect-square hover:scale-110 hover:shadow-xl transition-all ">
+            <div class="flex flex-col justify-center items-center ">
+              <img src="https://www.uat.edu/themes/uat/images/business-innovation-icon.png" alt="bulb with gear">
+              <h3 class="text-center ">Business & Innovation</h3>
+            </div>
           </div>
-          <div class="flex-1 bg-slate-500 aspect-square">
-            <h3 class="p-10">Business Innovation</h3>
+          <div class="flex-1 flex justify-center items-center bg-slate-50 aspect-square hover:scale-110 hover:shadow-xl transition-all ">
+            <div class="flex flex-col justify-center items-center">
+              <img src="https://www.uat.edu/themes/uat/images/creation-simulation-icon.png" alt="vr icon">
+              <h3 class="text-center ">Creation & Simulation</h3>
+            </div>
           </div>
-          <div class="flex-1 bg-slate-500 aspect-square">
-            <h3 class="p-10">Business Innovation</h3>
+          <div class="flex-1 flex justify-center items-center bg-slate-50 aspect-square hover:scale-110 hover:shadow-xl transition-all ">
+            <div class="flex flex-col justify-center items-center">
+              <img src="https://www.uat.edu/themes/uat/images/cyber-security-icon.png" alt="lock vector">
+              <h3 class="text-center ">Cyber Security</h3>
+            </div>
           </div>
-          <div class="flex-1 bg-slate-500 aspect-square">
-            <h3 class="p-10">Business Innovation</h3>
+          <div class="flex-1 flex justify-center items-center bg-slate-50 aspect-square hover:scale-110 hover:shadow-xl transition-all ">
+            <div class="flex flex-col justify-center items-center">
+              <img src="https://www.uat.edu/themes/uat/images/digital-arts-icon.png" alt="pen brush">
+              <h3 class="text-center ">Digital Arts</h3>
+            </div>
           </div>
-          <div class="flex-1 bg-slate-500 aspect-square">
-            <h3 class="p-10">Business Innovation</h3>
+          <div class="flex-1 flex justify-center items-center bg-slate-50 aspect-square hover:scale-110 hover:shadow-xl transition-all ">
+            <div class="flex flex-col justify-center items-center">
+              <img src="https://www.uat.edu/themes/uat/images/game-studies-icon.png" alt="controller">
+              <h3 class="text-center ">Game Studios</h3>
+            </div>
           </div>
-          <div class="flex-1 bg-slate-500 aspect-square">
-            <h3 class="p-10">Business Innovation</h3>
+          <div class="flex-1 flex justify-center items-center bg-slate-50 aspect-square hover:scale-110 hover:shadow-xl transition-all ">
+            <div class="flex flex-col justify-center items-center">
+             <img src="https://www.uat.edu/themes/uat/images/software-engineering-icon.png" alt="gear and wrenchg vector">
+              <h3 class="text-center ">Software Engineering</h3>
+            </div>
           </div>
         </div>
-
-      </div>
+      </div>  
     </section>
   </main>
 
   <footer class="absolute bottom-0 w-full bg-black">
-    <div class="copyright text-white flex justify-center ">
-      &copy;2024 University of Advancing Technology<br>All Rights Reserved<br><a href="https://learn.uat.edu/privacy-policy">Privacy Policy</a><br>Design by <a href="https://www.fabcomlive.com/">FabCom</a>
+    <div class=" text-white flex flex-col justify-center  items-center">
+      <p>&copy;2024 University of Advancing Technology</p> 
+      <p>All Rights Reserved</p>
+      <p>Redesign by Joey and Mitch</a></p>
+      <p><a class="underline" href="https://www.uat.com/">Go to uat.com</a></p>
     </div>
   </footer>
   
