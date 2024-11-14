@@ -1,0 +1,101 @@
+
+header{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	background-color: rgb(156 163 175);
+}
+
+nav{
+	letter-spacing: 0.1em;
+	text-align: center;
+	position: relative;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav li{
+	padding: 0.5em;
+	display: block;
+}
+
+nav a:not(.nav-logo), nav p{
+	text-decoration: none;
+	color: white; 
+}
+
+/*
+nav a:link, nav p{ color: white; }
+nav a:visited { color: #CCCCCC; }
+*/
+nav a:hover { color: #D3DBEB; }
+
+nav p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav ul ul {
+	background-color: rgb(150 140 140);
+	position: absolute;
+	padding: 0;
+	display: none;
+}
+
+nav ul ul li {
+	width: 8em;
+	padding-left: 1em;
+	margin-left: 0;
+}
+
+nav li:hover ul { display: block; }
+
+.nav-logo{
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	background-image: url("https://www.uat.edu/themes/uat/images/uat-logo.png");
+	background-size: cover;
+}
+
+
+#header-spacer{
+	height: 4rem;
+	background-color: red;
+	flex-basis: 100%;
+}
+
+@media (max-width:42rem){
+	header{
+		position: relative;
+	}
+	
+	#header-spacer{
+		display: none;
+	}
+}
+
+@media ((min-width:42.001rem) and (max-width:71rem)) {
+	nav > ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+@media (min-width:71.001rem) {
+	nav > ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}

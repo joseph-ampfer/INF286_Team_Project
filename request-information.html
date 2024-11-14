@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Request Information</title>
+	<!--<script src="https://cdn.tailwindcss.com"></script><!---->
+	<link href="css/general-formatting.css" rel="stylesheet" />
+	<link href="css/nav-bar.css" rel="stylesheet" />
+	
+	<style>
+		.barButton{
+			background-image: url(https://www.uat.edu/themes/uat/images/girl-yell.png);
+		}
+		
+		@media (max-width:42rem){
+			.barButton{
+				height: 8rem;
+				background-position: 0 -6rem;
+			}
+		}
+		
+		@media ((min-width:42.001rem) and (max-width:71rem)) {
+			.barButton{
+				background-position: -14.25rem 0;
+			}
+		}
+		
+		@media (min-width:71.001rem) {
+			.barButton{
+				background-position: -14.25rem 0;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" class = "nav-logo"></a>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><p>Curriculum Info</p>
+					<ul>
+						<li><a href="#">Degrees</a></li>
+						<li><a href="#">Academic Catalog</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Request Information</a></li>
+				<li><p>News and Events</p>
+					<ul>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="header-spacer"></div>
+	<main>
+		<section class="titleContainer" style="background-image: url(https://www.uat.edu/themes/uat/images/request-info-banner.png);">
+			<h1>Request Information</h1>
+		</section>
+		
+		<section class="formContainer">
+			<form method="POST">
+				<h2>Request Info</h2>
+				<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions about UAT and your Advancing Technology degree program of interest.</p>
+				<input type="text" name="fname" placeholder="First Name" required/>
+				<input type="text" name="lname" placeholder="Last Name" required/>
+				<input type="tel" name="phoneNum" placeholder="Phone Number" required/>
+				<input type="email" name="email" placeholder="Email" required/>
+				<textarea name="message" placeholder="Type your question here!" required></textarea>
+				<input type="submit" value="Submit" />
+			</form>
+		</section>
+		
+		<a class="barButton"><h2>Apply Now</h2></a>
+		
+		<section class="extra">
+			<table id = "everyOtherTable">
+				<tr>
+					<td>
+						<h3>Technology University Mission</h3>
+						<p>To educate Students in advancing tachnology who innovate for our future.</p>
+					</td>
+					<td>
+						<h3>Accreditation</h3>
+						<p>UAT is accredited by the Higher Learning Commission (hlcommission.org), an institutional accreditation agency recognized by the U.S. Department of Education.</p>
+					</td>
+					<td>
+						<h3>Where Are We Going?</h3>
+						<p>Learn about our Strategic Plan for the future.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h3>History of UAT</h3>
+						<p>UAT evolved from an accelerated industry corporate training division to its present status as a nationally recognized educational leader</p>
+					</td>
+					<td>
+						<h3>Fast Facts</h3>
+						<p>See an overview of UAT and learn what sets us apart from other institutions of higher learning.</p>
+					</td>
+					<td>
+						<h3>Tour the Campus</h3>
+						<p>Sign up for a tour of UAT's technology-infused campus.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h3>Employment at UAT</h3>
+						<p>UAT employees are our greatest asset. See how you can become part of our team.</p>
+					</td>
+					<td>
+						<h3>Contact Campus Information</h3>
+						<p>Find important phone numbers and other contact information</p>
+					</td>
+					<td>
+						<h3>Campus Safety</h3>
+						<p>UAT takes campus safety and crime prevention very seriously. Learn about our efforts to make UAT as safe as possible for students, visitors, and staff.</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+</body>
+</html>
