@@ -14,13 +14,6 @@ body{
 	margin: 0;
 }
 
-#header-spacer{
-	height: 3.375rem;
-	background-color: red;
-	flex-basis: 100%;
-	height: 4.125rem;
-}
-
 main{
 	display: flex;
 	flex-direction: row;
