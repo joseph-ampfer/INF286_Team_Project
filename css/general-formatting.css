@@ -49,6 +49,7 @@ main{
 
 .formContainer{
 	flex: 1 1 0;
+	margin-bottom: 1.25rem;
 }
 
 form{
@@ -106,7 +107,24 @@ form input[type="submit"]:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(150, 100, 80);
+	
+	color: white;
+	background-color: rgb(170, 100, 80);
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.barButton:hover{
+	background-color: rgb(120, 80, 70);
+	color: rgb(90, 50, 80);
+}
+
+.extra{
+	flex-basis: 100%;
 }
 
 @media (max-width:42rem){
@@ -122,7 +140,7 @@ form input[type="submit"]:hover{
 	.barButton{
 		padding: 1rem;
 		flex-basis: 100%;
-		max-height: 5rem;
+		height: 5rem;
 	}
 }
 
