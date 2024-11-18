@@ -60,7 +60,7 @@ nav ul ul li {
 nav li:hover ul { display: block; }
 
 .nav-logo{
-	display: block;
+	display: inline-block;
 	width: 3rem;
 	height: 3rem;
 	background-image: url("https://www.uat.edu/themes/uat/images/uat-logo.png");
