@@ -146,8 +146,33 @@
 		<p>&copy;2024 University of Advancing Technology</p> 
 		<p>All Rights Reserved</p>
 		<p>Redesign by Joey and Mitch</a></p>
-		<p><a href="https://www.uat.com/">Go to uat.com</a></p>
+		<p><a href="https://www.uat.com/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()">Cookie Settings</a></p>
+		<script>
+			function showCookieSettings(){
+				document.getElementById("cookieBar").style.display = "flex";
+			}
+		</script>
 	</footer>
 	<div id="footerSpacer"></div>
+	<div id="cookieBar">
+		<p>This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media.</p>
+		<div id="cookieButtons">
+			<button onclick="enableCookies()">Accept</button>
+			<button onclick="disableCookies()">Decline</button>
+			<script>
+				function closeBar() {
+					document.getElementById("cookieBar").style.display = "none";
+				}
+				
+				function enableCookies() {
+					closeBar();
+				}
+				
+				function disableCookies() {
+					closeBar();
+				}
+			</script>
+		</div>
+	</div>
 </body>
 </html>
