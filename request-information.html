@@ -8,8 +8,11 @@
 	<link href="css/general-formatting.css" rel="stylesheet" />
 	<link href="css/nav-bar.css" rel="stylesheet" />
 	<link href="css/cookie-bar.css" rel="stylesheet" />
-	
+	<script src="js/general.js"></script>
 	<style>
+		.titleContainer{
+			background-image: url(https://www.uat.edu/themes/uat/images/request-info-banner.png);
+		}
 		.barButton{
 			background-image: url(https://www.uat.edu/themes/uat/images/girl-yell.png);
 		}
@@ -36,6 +39,7 @@
 	
 </head>
 <body>
+	
 	<header>
 		<nav>
 			<ul>
@@ -63,7 +67,7 @@
 	</header>
 	<div id="header-spacer"></div>
 	<main>
-		<section class="titleContainer" style="background-image: url(https://www.uat.edu/themes/uat/images/request-info-banner.png);">
+		<section class="titleContainer">
 			<h1>Request Information</h1>
 		</section>
 		
@@ -134,11 +138,6 @@
 		<p>All Rights Reserved</p>
 		<p>Redesign by Joey and Mitch</a></p>
 		<p><a href="https://www.uat.com/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()">Cookie Settings</a></p>
-		<script>
-			function showCookieSettings(){
-				document.getElementById("cookieBar").style.display = "flex";
-			}
-		</script>
 	</footer>
 	<div id="footerSpacer"></div>
 	<div id="cookieBar">
@@ -146,19 +145,6 @@
 		<div id="cookieButtons">
 			<button onclick="enableCookies()">Accept</button>
 			<button onclick="disableCookies()">Decline</button>
-			<script>
-				function closeBar() {
-					document.getElementById("cookieBar").style.display = "none";
-				}
-				
-				function enableCookies() {
-					closeBar();
-				}
-				
-				function disableCookies() {
-					closeBar();
-				}
-			</script>
 		</div>
 	</div>
 </body>

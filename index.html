@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="css/nav-bar.css" rel="stylesheet" type="text/css" />
   <link href="css/cookie-bar.css" rel="stylesheet" />
+  <script src="js/general.js"></script>
 </head>
 <body class="flex-1 bg-gray-100 relative">
 	<header>
@@ -108,19 +109,6 @@
 		<div id="cookieButtons">
 			<button onclick="enableCookies()">Accept</button>
 			<button onclick="disableCookies()">Decline</button>
-			<script>
-				function closeBar() {
-					document.getElementById("cookieBar").style.display = "none";
-				}
-				
-				function enableCookies() {
-					closeBar();
-				}
-				
-				function disableCookies() {
-					closeBar();
-				}
-			</script>
 		</div>
 	</div>
   
