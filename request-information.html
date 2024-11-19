@@ -7,8 +7,12 @@
 	<!--<script src="https://cdn.tailwindcss.com"></script><!---->
 	<link href="css/general-formatting.css" rel="stylesheet" />
 	<link href="css/nav-bar.css" rel="stylesheet" />
-	
+	<link href="css/cookie-bar.css" rel="stylesheet" />
+	<script src="js/general.js"></script>
 	<style>
+		.titleContainer{
+			background-image: url(https://www.uat.edu/themes/uat/images/request-info-banner.png);
+		}
 		.barButton{
 			background-image: url(https://www.uat.edu/themes/uat/images/girl-yell.png);
 		}
@@ -35,37 +39,24 @@
 	
 </head>
 <body>
+	
 	<header>
 		<nav>
 			<ul>
 				<li>
 					<a href="index.html" class = "nav-logo"></a>
 				</li>
-				<button onclick = "navInteract()">Click Me!</button>
-				<script>
-					"use strict";
-					function navInteract(){
-						const elements = document.getElementsByClassName("navItem");
-						for (let x of elements) {
-							if (x.style.display === "none") {
-								x.style.display = "block";
-							} else {
-								x.style.display = "none";
-							}
-						}
-					}
-				</script>
-				<li><a href="index.html" class="navItem">Home</a></li>
-				<li><a href="#" class="navItem">Apply</a></li>
-				<li><a href="#" class="navItem">About Us</a></li>
-				<li><p class="navItem">Curriculum Info</p>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><p>Curriculum Info</p>
 					<ul>
 						<li><a href="#">Degrees</a></li>
 						<li><a href="#">Academic Catalog</a></li>
 					</ul>
 				</li>
-				<li><a href="#" class="navItem">Request Information</a></li>
-				<li><p class="navItem">News and Events</p>
+				<li><a href="#">Request Information</a></li>
+				<li><p>News and Events</p>
 					<ul>
 						<li><a href="#">News</a></li>
 						<li><a href="#">Events</a></li>
@@ -76,7 +67,7 @@
 	</header>
 	<div id="header-spacer"></div>
 	<main>
-		<section class="titleContainer" style="background-image: url(https://www.uat.edu/themes/uat/images/request-info-banner.png);">
+		<section class="titleContainer">
 			<h1>Request Information</h1>
 		</section>
 		
@@ -146,8 +137,15 @@
 		<p>&copy;2024 University of Advancing Technology</p> 
 		<p>All Rights Reserved</p>
 		<p>Redesign by Joey and Mitch</a></p>
-		<p><a href="https://www.uat.com/">Go to uat.com</a></p>
+		<p><a href="https://www.uat.com/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()">Cookie Settings</a></p>
 	</footer>
 	<div id="footerSpacer"></div>
+	<div id="cookieBar">
+		<p>This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media.</p>
+		<div id="cookieButtons">
+			<button onclick="enableCookies()">Accept</button>
+			<button onclick="disableCookies()">Decline</button>
+		</div>
+	</div>
 </body>
 </html>
