@@ -216,7 +216,7 @@ footer a{
 	width: 10rem;
 	height: 3rem;
 	flex: 0 1 auto;
-	/*flex-shrink: 1;/**/
+	cursor: pointer;
 }
 
 #cookieBar button:hover{
