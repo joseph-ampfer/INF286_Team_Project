@@ -185,6 +185,7 @@ footer *{
 
 footer a{
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 /* Adds spacing to make footer positioned a bit better */
