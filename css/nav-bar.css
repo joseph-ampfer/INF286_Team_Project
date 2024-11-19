@@ -76,6 +76,11 @@ nav li:hover ul { display: block; }
 	flex-basis: 100%;
 }
 
+.non-selectable {
+	user-select: none;
+	cursor: pointer;
+}
+
 /* Extra rules for a small screen */
 @media (max-width:42rem){
 	header{
