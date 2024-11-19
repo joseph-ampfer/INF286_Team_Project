@@ -1,4 +1,10 @@
 
+/*
+
+	This file contains styling rules for the nav bar and should be applied to every page
+
+*/
+
 header{
 	position: fixed;
 	z-index: 20;
@@ -33,10 +39,6 @@ nav a:not(.nav-logo), nav p{
 	color: white; 
 }
 
-/*
-nav a:link, nav p{ color: white; }
-nav a:visited { color: #CCCCCC; }
-*/
 nav a:hover { color: #D3DBEB; }
 
 nav p {
@@ -67,13 +69,14 @@ nav li:hover ul { display: block; }
 	background-size: cover;
 }
 
-
+/* Spacer so nav bar doesn't overlap content */
 #header-spacer{
 	height: 4rem;
 	background-color: red;
 	flex-basis: 100%;
 }
 
+/* Extra rules for a small screen */
 @media (max-width:42rem){
 	header{
 		position: relative;
@@ -84,6 +87,7 @@ nav li:hover ul { display: block; }
 	}
 }
 
+/* Extra rules for a medium screen */
 @media ((min-width:42.001rem) and (max-width:71rem)) {
 	nav > ul{
 		display: flex;
@@ -92,6 +96,7 @@ nav li:hover ul { display: block; }
 	}
 }
 
+/* Extra rules for a large screen */
 @media (min-width:71.001rem) {
 	nav > ul{
 		display: flex;

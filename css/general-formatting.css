@@ -1,4 +1,10 @@
 
+/*
+
+	This file contains generic styling rules applied to multiple different pages on the site
+
+*/
+
 *{
 	box-sizing: border-box;
 	font-family: ui-sans-serif, system-ui, sans-serif;
@@ -21,6 +27,7 @@ main{
 	flex-basis: 100%;
 }
 
+/* A container for an h1 that allows for a background image */
 .titleContainer{
 	flex-shrink: 1;
 	flex-grow: 1;
@@ -42,6 +49,8 @@ main{
 	font-size: 2.25rem;
 }
 
+
+/* Rules for forms and a container meant to be placed at the top of the page */
 .formContainer{
 	flex: 1 1 0;
 	margin-bottom: 1.25rem;
@@ -100,6 +109,7 @@ form input[type="submit"]:hover{
 	box-shadow: 0.01rem 0.01rem 0.375rem black;
 }
 
+/* A button that goes under (or alongside depending on screen size) the first grouping of content */
 .barButton{
 	display: flex;
 	justify-content: center;
@@ -123,10 +133,12 @@ form input[type="submit"]:hover{
 	color: rgb(90, 50, 80);
 }
 
+/* Container for content that takes up the full width of the page */
 .extra{
 	flex-basis: 100%;
 }
 
+/* A table that alternates background color every other cell */
 #everyOtherTable {
 	text-align: center;
 	table-layout: fixed;
@@ -175,12 +187,14 @@ footer a{
 	text-decoration: underline;
 }
 
+/* Adds spacing to make footer positioned a bit better */
 #footerSpacer{
 	height: 6rem;
 	width: 100%;
 	background-color: red;
 }
 
+/* Extra rules for a small screen */
 @media (max-width:42rem){
 	.titleContainer{
 		flex-basis: 100%;
@@ -197,27 +211,13 @@ footer a{
 		height: 5rem;
 	}
 	
-	#everyOtherTable {
-		/*display: block;/**/
-	}
-	
-	#everyOtherTable tbody{
-		/*display: block;/**/
-	}
-	
-	#everyOtherTable tr{
-		/*display: flex;
-		flex-direction: column;
-		max-height: 999rem;/**/
-	}
-	
 	#everyOtherTable td{
-		/*display: block;/**/
 		height: 10rem;
 		display: table-row;
 	}
 }
 
+/* Extra rules for a medium screen */
 @media ((min-width:42.001rem) and (max-width:71rem)) {
 	.titleContainer{
 		flex-basis: 100%;
@@ -229,6 +229,7 @@ footer a{
 	}
 }
 
+/* Extra rules for a large screen */
 @media (min-width:71.001rem) {
 	
 	main{
@@ -251,10 +252,6 @@ footer a{
 	
 	form p{
 		width: 35rem;
-	}
-	
-	#everyOtherTable{
-		/*max-width: 98.0625rem; /*This width is for maintaining size with above content*/
 	}
 	
 }

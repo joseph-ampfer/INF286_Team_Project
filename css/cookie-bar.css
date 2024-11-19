@@ -1,4 +1,11 @@
 
+/*
+
+	This file contains styling rules for the cookie bar and should be applied to every page
+
+*/
+
+/* The cookie bar itself */
 #cookieBar{
 	position: fixed;
 	border-top: 1px solid rgb(255, 100, 80);
@@ -13,6 +20,7 @@
 	line-height: 1.5;
 }
 
+/* Grouping of buttons in the cookie bar */
 #cookieButtons{
 	display: flex;
 	flex: 1 1 auto;
