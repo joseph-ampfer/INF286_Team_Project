@@ -1,0 +1,46 @@
+
+#cookieBar{
+	position: fixed;
+	border-top: 1px solid rgb(255, 100, 80);
+	background-color: white;
+	bottom: 0px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 21;
+	line-height: 1.5;
+}
+
+#cookieButtons{
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	row-gap: 1rem;
+}
+
+#cookieBar p{
+	width: 60%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+	flex: 0 1 auto;
+}
+
+#cookieBar button{
+	background-color: rgb(255, 100, 80);
+	color: white;
+	border: 1px solid black;
+	width: 10rem;
+	height: 3rem;
+	flex: 0 1 auto;
+	cursor: pointer;
+	font-size: 100%;
+}
+
+#cookieBar button:hover{
+	background-color: rgb(150, 100, 80);
+}

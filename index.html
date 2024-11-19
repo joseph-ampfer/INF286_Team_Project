@@ -6,6 +6,7 @@
   <title>UAT Redesign</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="css/nav-bar.css" rel="stylesheet" type="text/css" />
+  <link href="css/cookie-bar.css" rel="stylesheet" />
 </head>
 <body class="flex-1 bg-gray-100 relative">
 	<header>
@@ -101,6 +102,27 @@
       <p><a class="underline" href="https://www.uat.com/">Go to uat.com</a></p>
     </div>
   </footer>
+  
+  <div id="cookieBar">
+		<p>This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media.</p>
+		<div id="cookieButtons">
+			<button onclick="enableCookies()">Accept</button>
+			<button onclick="disableCookies()">Decline</button>
+			<script>
+				function closeBar() {
+					document.getElementById("cookieBar").style.display = "none";
+				}
+				
+				function enableCookies() {
+					closeBar();
+				}
+				
+				function disableCookies() {
+					closeBar();
+				}
+			</script>
+		</div>
+	</div>
   
 </body>
 </html>
