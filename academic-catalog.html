@@ -10,13 +10,67 @@
 	<link href="css/cookie-bar.css" rel="stylesheet" />
 	<script src="js/general.js"></script>
 	<style>
+		/*Overrides to make the spacing on this page work*/
 		.titleContainer{
 			background-image: url(https://www.uat.edu/images/uploads/homepage-callouts/header-uat-catalogs.jpg);
 			background-color: white;
 		}
 		
-		@media (max-width:42rem){
+		.secondaryContainer{
+			justify-content: center;
+			text-align: center;
+		}
 			
+		.secondaryContainer h2{
+			font-size: 2rem;
+		}
+		
+		.secondaryContainer p {
+			font-size: 1.5rem;
+			line-height: 1.5;
+		}
+		
+		/*Object for holding download links with attatched images */
+		#downloads {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: none;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		
+		/* Holds one image, a title, and a download link */
+		.downloadContainer {
+			background-color: black;
+		}
+		
+		/*Class and related ids for images inside a downloadContainer */
+		.downloadImageHolder {
+			width: 10rem;
+			background-size: cover;
+			background-repeat: no-repeat;
+			image-rendering: auto;
+		}
+		
+		#geek411img {
+			background-image: url(https://www.uat.edu/media/geek411-issue14.png);
+			height: 16rem;
+		}
+		
+		#universityCatalogImg {
+			background-image: url(https://www.uat.edu/media/university_catalog_1.png);
+			height: 15rem;
+		}
+		
+		#behindBitsImg {
+			background-image: url(https://www.uat.edu/media/btb-issue8.png);
+			height: 17.875rem;
+			background-position: -1.125rem -0.25rem;/**/
+			margin-bottom: -3.875rem;
+		}
+		
+		/*Screen-size specific rules */
+		@media (max-width:42rem){
 		}
 		
 		@media ((min-width:42.001rem) and (max-width:71rem)) {
@@ -30,6 +84,23 @@
 			.titleContainer{
 				max-width: 30rem;
 				height: 20rem;
+			}
+			.secondaryContainer{
+				justify-content: center;
+				text-align: left;
+			}
+			
+			.secondaryContainer h2{
+				text-align: left;
+				width: 90%;
+				margin-left: 5%;
+				font-size: 2rem;
+			}
+			
+			.secondaryContainer p {
+				width: 45rem;
+				font-size: 1.5rem;
+				line-height: 1.5;
 			}
 		}
 		
@@ -72,58 +143,23 @@
 			<!--<h1>hi</h1>-->
 		</section>
 		
-		<section class="formContainer">
-			<form>
-				<h2>Your guide to technology college life and on-campus/online Education</h2>
-				<p>It’s all right here. These catalogs serve as the gateway to everything University of Advancing Technology including courses for undergraduate, graduate and online students.</p>
-			</form>
+		<section class="secondaryContainer">
+			<h2>Your Guide to Technology Education</h2>
+			<p>It’s all right here. These catalogs serve as the gateway to everything University of Advancing Technology including courses for undergraduate, graduate and online students.</p>
 		</section>
 		
 		<section class="extra">
-			<table id = "everyOtherTable">
-				<tr>
-					<td>
-						<h3>Technology University Mission</h3>
-						<p>To educate Students in advancing tachnology who innovate for our future.</p>
-					</td>
-					<td>
-						<h3>Accreditation</h3>
-						<p>UAT is accredited by the Higher Learning Commission (hlcommission.org), an institutional accreditation agency recognized by the U.S. Department of Education.</p>
-					</td>
-					<td>
-						<h3>Where Are We Going?</h3>
-						<p>Learn about our Strategic Plan for the future.</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<h3>History of UAT</h3>
-						<p>UAT evolved from an accelerated industry corporate training division to its present status as a nationally recognized educational leader</p>
-					</td>
-					<td>
-						<h3>Fast Facts</h3>
-						<p>See an overview of UAT and learn what sets us apart from other institutions of higher learning.</p>
-					</td>
-					<td>
-						<h3>Tour the Campus</h3>
-						<p>Sign up for a tour of UAT's technology-infused campus.</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<h3>Employment at UAT</h3>
-						<p>UAT employees are our greatest asset. See how you can become part of our team.</p>
-					</td>
-					<td>
-						<h3>Contact Campus Information</h3>
-						<p>Find important phone numbers and other contact information</p>
-					</td>
-					<td>
-						<h3>Campus Safety</h3>
-						<p>UAT takes campus safety and crime prevention very seriously. Learn about our efforts to make UAT as safe as possible for students, visitors, and staff.</p>
-					</td>
-				</tr>
-			</table>
+			<div id="downloads">
+				<div class = "downloadContainer">
+					<div class = "downloadImageHolder" id = "geek411img"></div>
+				</div>
+				<div class = "downloadContainer">
+					<div class = "downloadImageHolder" id = "universityCatalogImg"></div>
+				</div>
+				<div class = "downloadContainer">
+					<div class = "downloadImageHolder" id = "behindBitsImg"></div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<footer style="">

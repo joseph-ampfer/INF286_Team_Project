@@ -51,9 +51,12 @@ main{
 
 
 /* Rules for forms and a container meant to be placed at the top of the page */
-.formContainer{
+.secondaryContainer{
 	flex: 1 1 0;
 	margin-bottom: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flext-start;
 }
 
 form{
@@ -62,12 +65,12 @@ form{
 	align-items: flext-start;
 }
 
-form h2{
+.secondaryContainer h2{
 	width: 100%;
 	text-align: center;
 }
 
-form p{
+.secondaryContainer p{
 	margin-top: 0.5rem;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -246,12 +249,12 @@ footer a{
 		line-height: 30rem;
 	}
 	
-	.formContainer{
+	.secondaryContainer{
 		flex-grow: 0;
 		margin-right: 3rem;
 	}
 	
-	form p{
+	.secondaryContainer p{
 		width: 35rem;
 	}
 	
