@@ -141,6 +141,7 @@ form textarea{
 /* Container for content that takes up the full width of the page */
 .extra{
 	flex-basis: 100%;
+	margin-top: 2rem;
 }
 
 /* A table that alternates background color every other cell */
@@ -149,7 +150,6 @@ form textarea{
 	table-layout: fixed;
 	width: 100%;
 	max-width: 70rem;
-	margin-top: 2rem;
 	margin-bottom: 2rem;
 	margin-left: auto;
 	margin-right: auto;
