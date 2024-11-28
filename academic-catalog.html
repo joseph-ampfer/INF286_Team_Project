@@ -34,14 +34,21 @@
 		#downloads {
 			display: flex;
 			flex-direction: row;
-			flex-wrap: none;
+			flex-wrap: nowrap;
 			align-items: center;
 			justify-content: space-evenly;
 		}
 		
 		/* Holds one image, a title, and a download link */
 		.downloadContainer {
-			background-color: black;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+			
+			border: 0.125rem grey solid;
+			border-radius: 0.5rem;
+			height: 18rem;
 		}
 		
 		/*Class and related ids for images inside a downloadContainer */
@@ -50,6 +57,29 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			image-rendering: auto;
+			flex: 0 0 auto;
+			margin: 0.25rem;
+		}
+		
+		/* Class for holding a download's link and title */
+		.downloadSecondaryContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.downloadSecondaryContainer h3 {
+			color: rgb(120, 80, 70);
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+			text-align: center;
+		}
+		
+		.downloadSecondaryContainer a {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
 		}
 		
 		#geek411img {
@@ -64,7 +94,9 @@
 		
 		#behindBitsImg {
 			background-image: url(https://www.uat.edu/media/btb-issue8.png);
+			background-size: cover;
 			height: 17.875rem;
+			width: 100%;
 			background-position: -1.125rem -0.25rem;/**/
 			margin-bottom: -3.875rem;
 		}
@@ -126,7 +158,7 @@
 						<li><a href="#">Academic Catalog</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Request Information</a></li>
+				<li><a href="request-information.html">Request Information</a></li>
 				<li><p class="non-selectable">News and Events</p>
 					<ul>
 						<li><a href="#">News</a></li>
@@ -152,12 +184,24 @@
 			<div id="downloads">
 				<div class = "downloadContainer">
 					<div class = "downloadImageHolder" id = "geek411img"></div>
+					<div class = "downloadSecondaryContainer">
+						<h3>GEEK 411</h3>
+						<a href = "https://www.uat.edu/media/24UAT128_Geek411-i21_screen.pdf" class="dropShadowBtn" target="_blank">View Recent Issue</a>
+					</div>
 				</div>
 				<div class = "downloadContainer">
 					<div class = "downloadImageHolder" id = "universityCatalogImg"></div>
+					<div class = "downloadSecondaryContainer">
+						<h3>UNIVERSITY CATALOG</h3>
+						<a href = "https://www.uat.edu/media/UAT_Catalog_2024_V3.1.pdf" class="dropShadowBtn" target="_blank">View Recent Catalog</a>
+					</div>
 				</div>
 				<div class = "downloadContainer">
-					<div class = "downloadImageHolder" id = "behindBitsImg"></div>
+					<div class = "downloadImageHolder"><div id = "behindBitsImg"></div></div>
+					<div class = "downloadSecondaryContainer">
+						<h3>BEHIND THE BITS</h3>
+						<a href = "https://www.uat.edu/media/UAT-BtB-Issue15.pdf" class="dropShadowBtn" target="_blank">View Recent Issue</a>
+					</div>
 				</div>
 			</div>
 		</section>
