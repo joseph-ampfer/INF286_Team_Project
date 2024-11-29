@@ -15,9 +15,9 @@
 body{
 	display: flex;
 	position: relative;
-	background-color: rgb(220, 200, 200);
 	flex-wrap: wrap;
 	margin: 0;
+	background-color: black;
 }
 
 main{
@@ -25,9 +25,27 @@ main{
 	flex-direction: row;
 	flex-wrap: wrap;
 	flex-basis: 100%;
+	
+	background-color: rgb(220, 200, 200);
 }
 
-/* A container for an h1 that allows for a background image */
+/*
+	A container to hold content meant to be placed at the top of the page.
+	Primarily meant to hold a .titleContainer and .secondaryContainer, but can be tweaked to hold additional content such as a .barButton.
+	Will automatically set margins of inside objects
+*/
+.topContent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	justify-content: center;
+}
+
+/*
+	A container for an h1 that allows for a background image 
+	The background image itself will need to be set in the html file
+*/
 .titleContainer{
 	flex-shrink: 1;
 	flex-grow: 1;
@@ -50,52 +68,88 @@ main{
 }
 
 
-/* Rules for forms and a container meant to be placed at the top of the page */
+/* 
+	Rules for forms and a container meant to be placed at the top of the page.
+	Goes after the .titleContainer and inside the .topContent.
+	Typically has an h2 and a p at the top.
+*/
 .secondaryContainer{
 	flex: 1 1 0;
-	margin-bottom: 1.25rem;
+	padding: 1rem;
+	
 	display: flex;
-	flex-direction: column;
-	align-items: flext-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-form{
-	display: flex;
-	flex-direction: column;
-	align-items: flext-start;
+.secondaryContainer>*:not(:last-child){
+	margin: 0 0 1rem 0;
+}
+
+.secondaryContainer>:last-child{
+	margin: 0;
 }
 
 .secondaryContainer h2{
-	width: 100%;
+	flex: 0 0 100%;
 	text-align: center;
 }
 
 .secondaryContainer p{
-	margin-top: 0.5rem;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 90%;
+	flex: 0 0 100%;
 }
 
+/*
+	An option class for .secondaryContainer to make the text larger.
+	Should only be used if the container only has an h2 and p.
+*/
+.bigText{
+	justify-content: center;
+	text-align: center;
+	flex-basis: 45rem;
+}
+	
+.bigText h2{
+	font-size: 2rem;
+}
 
-form input:not([type="submit"]){
-	margin-top: 0.5rem;
-	margin-left: 10%;
-	width: 80%;
+.bigText p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+form{
+	flex: 0 0 80%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flext-start;
+	max-width: 28rem;
+}
+
+form *:not(:last-child){
+	margin: 0 0 0.5rem 0;
+}
+
+form :last-child{
+	margin: 0;
+}
+
+form *:not(.dropShadowBtn) {
+	width: 100%;
 }
 
 form textarea{
-	margin-top: 0.5rem;
-	margin-left: 10%;
-	width: 80%;
 	height: 5rem;
 	resize: none;
 	font-size: 0.75rem;
 }
 
+/* A small button that creates a drop shadow when hovered over*/
 .dropShadowBtn{
-	margin-top: 0.5rem;
-	margin-left: 10%;
+	margin: 0.5rem;
 	width: 100px;
 	background-color: rgb(150, 100, 80);
 	border: none;
@@ -107,14 +161,16 @@ form textarea{
 	text-decoration: none;
 	
 	cursor: pointer;
-	
 }
 
 .dropShadowBtn:hover{
 	box-shadow: 0.01rem 0.01rem 0.375rem black;
 }
 
-/* A button that goes under (or alongside depending on screen size) the first grouping of content */
+/* 
+	A button that can be the third item in .topContent.
+	A background image can be set in the html file.
+*/
 .barButton{
 	display: flex;
 	justify-content: center;
@@ -129,6 +185,7 @@ form textarea{
 	padding-left: 1rem;
 	padding-right: 1rem;
 	width: 10rem;
+	min-height: 8rem;
 	
 	cursor: pointer;
 }
@@ -138,10 +195,18 @@ form textarea{
 	color: rgb(90, 50, 80);
 }
 
-/* Container for content that takes up the full width of the page */
+/*
+	Container for content that takes up the full width of the page.
+	Goes after .topContent
+*/
 .extra{
 	flex-basis: 100%;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 /* A table that alternates background color every other cell */
@@ -169,6 +234,87 @@ form textarea{
 
 #everyOtherTable tr:nth-child(odd) td:nth-child(even), #everyOtherTable tr:nth-child(even) td:nth-child(odd){
 	background-color: #f0f0f0;
+}
+
+/*Object for holding download links with attatched images */
+#downloads {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	margin-bottom: 1rem;
+	max-width: 90rem;
+}
+
+/* Holds one image, a title, and a download link */
+.downloadContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	
+	flex: 1 1 0;
+	margin: 0 0.5rem;
+	
+	border: 0.125rem grey solid;
+	border-radius: 0.5rem;
+}
+
+/*Classfor images inside a downloadContainer */
+.downloadImageHolder {
+	flex: 0 0 auto;
+	margin: 0.25rem;
+	display: flex;
+	align-items: center;
+}
+
+.downloadImage {
+	width: 10rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	image-rendering: auto;
+}
+
+.downloadContainer h3{
+	flex-basis: 100%;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-bottom: 2px grey solid;
+	text-align: center;
+	text-wrap: nowrap;
+}
+
+.downloadContainer a {
+	flex-grow: 1;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.25rem;
+}
+
+/*
+	A section for storing a simple p text block with an h3 label
+*/
+.basicText {
+	max-width: 60rem;
+	padding: 0 1rem;
+	margin-bottom: 1rem;
+	
+}
+
+.basicText h3{
+	margin: 0;
+	border-bottom: 1px rgb(150, 100, 80) solid;
+	color: rgb(150, 100, 80);
+	text-transform: uppercase;
+}
+
+.basicText p {
+	margin: 0 0;
 }
 
 footer{
@@ -212,7 +358,6 @@ footer a{
 	}
 	
 	.barButton{
-		padding: 1rem;
 		flex-basis: 100%;
 		height: 5rem;
 	}
@@ -220,6 +365,11 @@ footer a{
 	#everyOtherTable td{
 		height: 10rem;
 		display: table-row;
+	}
+	
+	#downloads{
+		flex-direction: column;
+		row-gap: 0.5rem;
 	}
 }
 
@@ -252,12 +402,22 @@ footer a{
 	}
 	
 	.secondaryContainer{
-		flex-grow: 0;
-		margin-right: 3rem;
+		flex: 0 0 35rem;
 	}
 	
-	.secondaryContainer p{
-		width: 35rem;
+	.bigText{
+		justify-content: center;
+		text-align: left;
+	}
+	
+	.bigText h2{
+		text-align: left;
+		font-size: 2rem;
+	}
+	
+	.bigText p {
+		font-size: 1.5rem;
+		line-height: 1.5;
 	}
 	
 }

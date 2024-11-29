@@ -19,7 +19,6 @@
 		
 		@media (max-width:42rem){
 			.barButton{
-				height: 8rem;
 				background-position: 0 -6rem;
 			}
 		}
@@ -67,25 +66,26 @@
 	</header>
 	<div id="header-spacer"></div>
 	<main>
-		<section class="titleContainer">
-			<h1>Request Information</h1>
+		<section class="topContent">
+			<section class="titleContainer">
+				<h1>Request Information</h1>
+			</section>
+			
+			<section class="secondaryContainer">
+				<h2>Request Info</h2>
+				<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions about UAT and your Advancing Technology degree program of interest.</p>
+				<form method="POST">
+					<input type="text" name="fname" placeholder="First Name" required/>
+					<input type="text" name="lname" placeholder="Last Name" required/>
+					<input type="tel" name="phoneNum" placeholder="Phone Number" required/>
+					<input type="email" name="email" placeholder="Email" required/>
+					<textarea name="message" placeholder="Type your question here!" required></textarea>
+					<input type="submit" class="dropShadowBtn" value="Submit" />
+				</form>
+			</section>
+			
+			<a class="barButton"><h2>Apply Now</h2></a>
 		</section>
-		
-		<section class="secondaryContainer">
-			<h2>Request Info</h2>
-			<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions about UAT and your Advancing Technology degree program of interest.</p>
-			<form method="POST">
-				<input type="text" name="fname" placeholder="First Name" required/>
-				<input type="text" name="lname" placeholder="Last Name" required/>
-				<input type="tel" name="phoneNum" placeholder="Phone Number" required/>
-				<input type="email" name="email" placeholder="Email" required/>
-				<textarea name="message" placeholder="Type your question here!" required></textarea>
-				<input type="submit" class="dropShadowBtn" value="Submit" />
-			</form>
-		</section>
-		
-		<a class="barButton"><h2>Apply Now</h2></a>
-		
 		<section class="extra">
 			<table id = "everyOtherTable">
 				<tr>

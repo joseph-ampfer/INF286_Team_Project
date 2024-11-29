@@ -10,76 +10,10 @@
 	<link href="css/cookie-bar.css" rel="stylesheet" />
 	<script src="js/general.js"></script>
 	<style>
-		/*Overrides to make the spacing on this page work*/
+		/*Overrides to make the images on this page work*/
 		.titleContainer{
 			background-image: url(https://www.uat.edu/images/uploads/homepage-callouts/header-uat-catalogs.jpg);
 			background-color: white;
-		}
-		
-		.secondaryContainer{
-			justify-content: center;
-			text-align: center;
-		}
-			
-		.secondaryContainer h2{
-			font-size: 2rem;
-		}
-		
-		.secondaryContainer p {
-			font-size: 1.5rem;
-			line-height: 1.5;
-		}
-		
-		/*Object for holding download links with attatched images */
-		#downloads {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			align-items: center;
-			justify-content: space-evenly;
-		}
-		
-		/* Holds one image, a title, and a download link */
-		.downloadContainer {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			align-items: center;
-			
-			border: 0.125rem grey solid;
-			border-radius: 0.5rem;
-			height: 18rem;
-		}
-		
-		/*Class and related ids for images inside a downloadContainer */
-		.downloadImageHolder {
-			width: 10rem;
-			background-size: cover;
-			background-repeat: no-repeat;
-			image-rendering: auto;
-			flex: 0 0 auto;
-			margin: 0.25rem;
-		}
-		
-		/* Class for holding a download's link and title */
-		.downloadSecondaryContainer {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-		}
-		
-		.downloadSecondaryContainer h3 {
-			color: rgb(120, 80, 70);
-			margin-left: 0.5rem;
-			margin-right: 0.5rem;
-			text-align: center;
-		}
-		
-		.downloadSecondaryContainer a {
-			margin-left: 0.5rem;
-			margin-right: 0.5rem;
 		}
 		
 		#geek411img {
@@ -94,15 +28,14 @@
 		
 		#behindBitsImg {
 			background-image: url(https://www.uat.edu/media/btb-issue8.png);
-			background-size: cover;
 			height: 17.875rem;
-			width: 100%;
-			background-position: -1.125rem -0.25rem;/**/
+			background-position: -1.125rem -0.25rem;
 			margin-bottom: -3.875rem;
 		}
 		
 		/*Screen-size specific rules */
 		@media (max-width:42rem){
+			
 		}
 		
 		@media ((min-width:42.001rem) and (max-width:71rem)) {
@@ -117,27 +50,7 @@
 				max-width: 30rem;
 				height: 20rem;
 			}
-			.secondaryContainer{
-				justify-content: center;
-				text-align: left;
-			}
-			
-			.secondaryContainer h2{
-				text-align: left;
-				width: 90%;
-				margin-left: 5%;
-				font-size: 2rem;
-			}
-			
-			.secondaryContainer p {
-				width: 45rem;
-				font-size: 1.5rem;
-				line-height: 1.5;
-			}
 		}
-		
-		
-		
 	</style>
 	
 </head>
@@ -170,40 +83,53 @@
 	</header>
 	<div id="header-spacer"></div>
 	<main>
-		<section class="titleContainer">
-			<!--<img src = "https://www.uat.edu/images/uploads/homepage-callouts/header-uat-catalogs.jpg" alt = "UAT Catalogs" />-->
-			<!--<h1>hi</h1>-->
-		</section>
 		
-		<section class="secondaryContainer">
-			<h2>Your Guide to Technology Education</h2>
-			<p>It’s all right here. These catalogs serve as the gateway to everything University of Advancing Technology including courses for undergraduate, graduate and online students.</p>
+		<section class="topContent">
+			<section class="titleContainer">
+				<!--<img src = "https://www.uat.edu/images/uploads/homepage-callouts/header-uat-catalogs.jpg" alt = "UAT Catalogs" />-->
+				<!--<h1>hi</h1>-->
+			</section>
+			
+			<section class="secondaryContainer bigText">
+				<h2>Your Guide to Technology Education</h2>
+				<p>It’s all right here. These catalogs serve as the gateway to everything University of Advancing Technology including courses for undergraduate, graduate and online students.</p>
+			</section>
 		</section>
 		
 		<section class="extra">
-			<div id="downloads">
+			<section id="downloads">
 				<div class = "downloadContainer">
-					<div class = "downloadImageHolder" id = "geek411img"></div>
-					<div class = "downloadSecondaryContainer">
-						<h3>GEEK 411</h3>
-						<a href = "https://www.uat.edu/media/24UAT128_Geek411-i21_screen.pdf" class="dropShadowBtn" target="_blank">View Recent Issue</a>
-					</div>
+					<h3>GEEK 411</h3>
+					<div class = "downloadImageHolder"><div class="downloadImage" id = "geek411img"></div></div>
+					<a href = "https://www.uat.edu/media/24UAT128_Geek411-i21_screen.pdf" class="dropShadowBtn" target="_blank">View Recent Issue</a>
 				</div>
 				<div class = "downloadContainer">
-					<div class = "downloadImageHolder" id = "universityCatalogImg"></div>
-					<div class = "downloadSecondaryContainer">
-						<h3>UNIVERSITY CATALOG</h3>
-						<a href = "https://www.uat.edu/media/UAT_Catalog_2024_V3.1.pdf" class="dropShadowBtn" target="_blank">View Recent Catalog</a>
-					</div>
+					<h3>UNIVERSITY CATALOG</h3>
+					<div class = "downloadImageHolder"><div class="downloadImage" id = "universityCatalogImg"></div></div>
+					<a href = "https://www.uat.edu/media/UAT_Catalog_2024_V3.1.pdf" class="dropShadowBtn" target="_blank">View Recent Catalog</a>
 				</div>
 				<div class = "downloadContainer">
-					<div class = "downloadImageHolder"><div id = "behindBitsImg"></div></div>
-					<div class = "downloadSecondaryContainer">
-						<h3>BEHIND THE BITS</h3>
-						<a href = "https://www.uat.edu/media/UAT-BtB-Issue15.pdf" class="dropShadowBtn" target="_blank">View Recent Issue</a>
-					</div>
+					<h3>BEHIND THE BITS</h3>
+					<div class = "downloadImageHolder"><div class="downloadImage" id = "behindBitsImg"></div></div>
+					<a href = "https://www.uat.edu/media/UAT-BtB-Issue15.pdf" class="dropShadowBtn" target="_blank">View Recent Issue</a>
 				</div>
-			</div>
+			</section>
+			
+			<section class = "basicText">
+				<h3>LEARN MORE</h3>
+				<p>About all aspects of UAT life including our respected technology degree programs representing the leading edge of science and art innovation, plus everything you need to know about admissions procedures, policies, tuition, scholarships, financial aid, residence life, academics, governance and more.</p>
+			</section>
+			
+			<section class = "basicText">
+				<h3>Discover More</h3>
+				<p>About UAT’s distinctive features that set us apart as an intimate, private technology University focused on educating students in advancing technology who desire to innovate for our future. Changing the world through technology is inherent in UAT’s mission which embodies UAT’s core reason for being—to advance global society by developing premier thinkers for a lifetime of innovation. The technology University’s respected Synchronic Learning model provides an individualized, interactive, enriched education experience that creates a new generation of leaders ready to transform the world we live in.</p>
+			</section>
+			
+			<section class = "basicText">
+				<h3>Connect More</h3>
+				<p>To campus life, our team of faculty, staff and administrators and Geek culture comprised of a unique collective of individuals indigenous to the digital realm who share their passion for technology and live for the next great adventure in technology innovation.</p>
+			</section>
+			
 		</section>
 	</main>
 	<footer style="">
