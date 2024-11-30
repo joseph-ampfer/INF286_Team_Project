@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UAT News</title>
+	<!--<script src="https://cdn.tailwindcss.com"></script><!---->
+	<link href="css/general-formatting.css" rel="stylesheet" />
+	<link href="css/nav-bar.css" rel="stylesheet" />
+	<link href="css/cookie-bar.css" rel="stylesheet" />
+	<script src="js/general.js"></script>
+	<style>
+		/*Overrides to make the images on this page work*/
+		.titleContainer{
+			background-image: url(https://www.uattech.com/hs-fs/hubfs/UAT_CAMPUS_TEMPE_AZ.jpeg?width=2250&name=UAT_CAMPUS_TEMPE_AZ.jpeg);
+		}
+		
+		.dropShadowBtn{
+			flex-basis: 100%;
+		}
+		
+		.downloadContainer{
+			flex-basis: 30%;
+		}
+		
+		/*Screen-size specific rules */
+		@media (max-width:42rem){
+			
+			.downloadContainer{
+				flex-basis: 100%;
+			}
+			
+		}
+		
+		@media ((min-width:42.001rem) and (max-width:71rem)) {
+			.titleContainer{
+				height: 20rem;
+			}
+		}
+		
+		@media (min-width:71.001rem) {
+			.titleContainer{
+				max-width: 30rem;
+				height: 20rem;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" class = "nav-logo"></a>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><p class="non-selectable">Curriculum Info</p>
+					<ul>
+						<li><a href="#">Degrees</a></li>
+						<li><a href="academic-catalog.html">Academic Catalog</a></li>
+					</ul>
+				</li>
+				<li><a href="request-information.html">Request Information</a></li>
+				<li><p class="non-selectable">News and Events</p>
+					<ul>
+						<li><a href="news.html">News</a></li>
+						<li><a href="#">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="header-spacer"></div>
+	<main>
+		
+		<section class="topContent">
+			<section class="titleContainer">
+				<h1>News</h1>
+			</section>
+			
+			<section class="secondaryContainer bigText">
+				<h2>UAT Tech - Official Blog of University of Advancing Technology</h2>
+				<p>UATTECH is the source for all things technology and everything happening at or about University of Advancing Technology.</p>
+			</section>
+			
+			<section class="secondaryContainer" style="text-align: center; background-color: rgb(170, 100, 80); color: white;">
+				<h2>Subscribe to Our Newsletter</h2>
+				<p>Join now to receive a monthly digest of our best content and announcements.</p>
+				<form method="POST">
+					<input type="text" name="newsletterEmail" placeholder="Enter your Email Here!" required/>
+					<input type="submit" class="dropShadowBtn" value="Submit" />
+				</form>
+			</section>
+		</section>
+		
+		<section class="extra">
+			<section id="downloads">
+				<section class = "downloadContainer">
+					<h3>UAT's Esports Team Shines at Super Smash Bros. Tournament</h3>
+					<p>At University of Advancing Technology (UAT), we participate in competitive events to give students a chance to sharpen their skills, build teamwork, and gain real-world experience. These competitions ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Katy Toerner</span>
+					<span class = "right">7 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>Unlocking Leadership Excellence: Insights from Dr. Mark Smith</h3>
+					<p>In today’s fast-paced and ever-evolving world, effective leadership is more crucial than ever. It’s not just about managing tasks; it’s about inspiring teams, fostering innovation, and guiding ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Lisa Ramirez</span>
+					<span class = "right">4 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>Honoring Veterans at UAT: A Tribute to Service, Education, and Innovation</h3>
+					<p>On this Veterans Day, we express our deepest gratitude for the immense contributions veterans make to our country, both during their service and after they transition to civilian life. For many ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Madison Robinson</span>
+					<span class = "right">20 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>Lessons in Service: Aaron Rodriguez's Path</h3>
+					<p>In a world increasingly shaped by technology and global perspectives, few individuals embody the spirit of service and adaptability like UAT Cyber Security Professor, Aaron Rodriguez. With over a ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Madison Robinson</span>
+					<span class = "right">19 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>From Service to Cybersecurity: Professor Becote</h3>
+					<p>In an era where cybersecurity is paramount, few can bring the unique blend of experience and insight that UAT Professor, Briant Becote, PhD, offers. A veteran of both the Army National Guard and the ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Madison Robinson</span>
+					<span class = "right">12 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>UAT Partners with Arizona Anti-Trafficking Network for STEM Day Camp</h3>
+					<p>University of Advancing Technology hosts day camp with local non-profit for K-12 students ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Robert Walker</span>
+					<span class = "right">5 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>Understanding and Addressing Common Cybersecurity Blind Spots</h3>
+					<p>October marks Cybersecurity Awareness Month, a crucial time for businesses and individuals alike to reassess their digital defenses. As we navigate an increasingly interconnected world, the need for ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Lisa Ramirez</span>
+					<span class = "right">7 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>Secure Our World: Simple Steps for Cyber Safety</h3>
+					<p>October marks Cybersecurity Awareness Month, a time to focus on securing our digital lives. The theme for this year, “Secure Our World,” emphasizes that cybersecurity isn’t just for the ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Lisa Ramirez</span>
+					<span class = "right">7 Min Read</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>UAT Recognized for Commitment to Social Mobility</h3>
+					<p>University of Advancing Technology (UAT) has proudly announced its ranking as the 7th best regional college in the West for social mobility, according to the latest U.S. News & World Report. This ... </p>
+					<a class = "dropShadowBtn">View Article</a>
+					<span class = "left">By Madison Robinson</span>
+					<span class = "right">3 Min Read</span>
+				</section>
+			</section>
+			
+		</section>
+	</main>
+	<footer style="">
+		<p>&copy;2024 University of Advancing Technology</p> 
+		<p>All Rights Reserved</p>
+		<p>Redesign by Joey and Mitch</a></p>
+		<p><a href="https://www.uat.edu/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()">Cookie Settings</a></p>
+	</footer>
+	<div id="footerSpacer"></div>
+	<div id="cookieBar">
+		<p>This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media.</p>
+		<div id="cookieButtons">
+			<button onclick="enableCookies()">Accept</button>
+			<button onclick="disableCookies()">Decline</button>
+		</div>
+	</div>
+</body>
+</html>

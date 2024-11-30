@@ -55,11 +55,15 @@ main{
 	background-repeat: no-repeat;
 	background-size: cover;
 	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 	white-space: nowrap
 }
 
 .titleContainer h1{
-	margin: auto;
+	margin: 0;
 	text-align: center;
 	
 	color: white;
@@ -152,7 +156,7 @@ form textarea{
 	margin: 0.5rem;
 	width: 100px;
 	background-color: rgb(150, 100, 80);
-	border: none;
+	border: 1px solid black;
 	color: white;
 	padding-top: 0.25rem;
 	padding-bottom: 0.25rem;
@@ -240,10 +244,11 @@ form textarea{
 #downloads {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin-bottom: 1rem;
 	max-width: 90rem;
+	row-gap: 0.5rem;
 }
 
 /* Holds one image, a title, and a download link */
@@ -252,7 +257,7 @@ form textarea{
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 	
 	flex: 1 1 0;
 	margin: 0 0.5rem;
@@ -284,7 +289,6 @@ form textarea{
 	margin-bottom: 0.5rem;
 	border-bottom: 2px grey solid;
 	text-align: center;
-	text-wrap: nowrap;
 }
 
 .downloadContainer a {
@@ -294,6 +298,27 @@ form textarea{
 	align-items: center;
 	justify-content: center;
 	padding: 0.25rem;
+}
+
+.downloadContainer p {
+	flex: 1 1 auto;
+	margin: 0 0.25rem 0.25rem 0.25rem;
+}
+
+.downloadContainer span{
+	display: block;
+	font-size: 0.75rem;
+}
+
+.downloadContainer .left{
+	text-align: left;
+	margin-right: auto;
+	margin-bottom: 0.25rem;
+}
+.downloadContainer .right{
+	text-align: right;
+	margin-left: auto;
+	margin-bottom: 0.25rem;
 }
 
 /*
@@ -368,8 +393,11 @@ footer a{
 	}
 	
 	#downloads{
-		flex-direction: column;
-		row-gap: 0.5rem;
+		/*flex-direction: column;*/
+	}
+	
+	.downloadContainer{
+		flex-basis: 100%;
 	}
 }
 
@@ -395,10 +423,6 @@ footer a{
 	.titleContainer{
 		max-width: 50rem;
 		height: 30rem;
-	}
-	
-	.titleContainer h1{
-		line-height: 30rem;
 	}
 	
 	.secondaryContainer{
