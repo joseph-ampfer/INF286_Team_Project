@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UAT Events</title>
+	<!--<script src="https://cdn.tailwindcss.com"></script><!---->
+	<link href="css/general-formatting.css" rel="stylesheet" />
+	<link href="css/nav-bar.css" rel="stylesheet" />
+	<link href="css/cookie-bar.css" rel="stylesheet" />
+	<script src="js/general.js"></script>
+	<style>
+		/*Overrides to make the images on this page work*/
+		.titleContainer{
+			background-image: url(https://www.uat.edu/media/image008.gif);
+			background-color: white;
+			background-position: bottom left;
+		}
+		
+		.dropShadowBtn{
+			flex-basis: 100%;
+		}
+		
+		.downloadContainer{
+			flex-basis: 30%;
+			align-items: flex-end;
+		}
+		
+		.downloadImageHolder{
+			flex: 1 1 20rem;
+			margin: 0;
+			display: block;
+		}
+		
+		.downloadContainer h3{
+			margin-bottom: 0;
+			margin-left: 0;
+			margin-right: 0;
+			border: none;
+		}
+		
+		.downloadContainer img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-bottom: 2px grey solid;
+			border-top: 2px grey solid;
+		}
+		
+		/*Screen-size specific rules */
+		@media (max-width:42rem){
+			.downloadContainer{
+				flex-basis: 100%;
+			}
+			
+		}
+		
+		@media ((min-width:42.001rem) and (max-width:71rem)) {
+			.titleContainer{
+				height: 20rem;
+			}
+		}
+		
+		@media (min-width:71.001rem) {
+			.titleContainer{
+				max-width: 30rem;
+				height: 20rem;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" class = "nav-logo"></a>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><p class="non-selectable">Curriculum Info</p>
+					<ul>
+						<li><a href="#">Degrees</a></li>
+						<li><a href="academic-catalog.html">Academic Catalog</a></li>
+					</ul>
+				</li>
+				<li><a href="request-information.html">Request Information</a></li>
+				<li><p class="non-selectable">News and Events</p>
+					<ul>
+						<li><a href="news.html">News</a></li>
+						<li><a href="#">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="header-spacer"></div>
+	<main>
+		
+		<section class="topContent">
+			<section class="titleContainer"></section>
+			
+			<section class="secondaryContainer bigText">
+				<h2>University of Advancing Technology Events</h2>
+				<p>Connect with other UAT students at happenings around and off campus. Check out upcoming events and don’t forget to reserve your ticket! If you’re hosting a university sanctioned event reach out to <a class = "basicLink" href="mailto:eventscommittee@uat.edu">eventscommittee@uat.edu</a>.​</p>
+			</section>
+		</section>
+		
+		<section class="extra">
+			<section id="downloads">
+				<section class = "downloadContainer">
+					<h3>UAT Discovery Expo: December 6th</h3>
+					<div class="downloadImageHolder">
+						<img src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F734228029%2F218209763391%2F1%2Foriginal.20240402-232049?auto=format%2Ccompress&q=75&sharp=10&s=a5446a9210afb9d6ff1d8bfb90bffcde"></img>
+					</div>
+					<a href = "https://www.eventbrite.com/e/uat-discovery-expo-december-6th-tickets-715760337437?_eboga=2056651462.1728511228" class="dropShadowBtn" target="_blank">Sign up Today!</a>
+					<span class = "left">Fri, Dec 06</span>
+					<span class = "right">2:30 PM</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>UAT Fall 2024 Student Innovation Project (SIP) Showcase</h3>
+					<div class="downloadImageHolder">
+						<img src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F734228029%2F218209763391%2F1%2Foriginal.20240402-232049?auto=format%2Ccompress&q=75&sharp=10&s=a5446a9210afb9d6ff1d8bfb90bffcde"></img>
+					</div>
+					<a href = "https://www.uat.edu/media/24UAT128_Geek411-i21_screen.pdf" class="dropShadowBtn" target="_blank">Sign up Today!</a>
+					<span class = "left">Tue, Dec 17</span>
+					<span class = "right">10:30 AM</span>
+				</section>
+				
+				<section class = "downloadContainer">
+					<h3>UAT Discovery Expo: December 6th</h3>
+					<div class="downloadImageHolder">
+						<img src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F734228029%2F218209763391%2F1%2Foriginal.20240402-232049?auto=format%2Ccompress&q=75&sharp=10&s=a5446a9210afb9d6ff1d8bfb90bffcde"></img>
+					</div>
+					<a href = "https://www.uat.edu/media/24UAT128_Geek411-i21_screen.pdf" class="dropShadowBtn" target="_blank">Sign up Today!</a>
+					<span class = "left">Fri, Dec 06</span>
+					<span class = "right">2:30 PM</span>
+				</section>
+			</section>
+			
+		</section>
+	</main>
+	<footer style="">
+		<p>&copy;2024 University of Advancing Technology</p> 
+		<p>All Rights Reserved</p>
+		<p>Redesign by Joey and Mitch</a></p>
+		<p><a href="https://www.uat.edu/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()">Cookie Settings</a></p>
+	</footer>
+	<div id="footerSpacer"></div>
+	<div id="cookieBar">
+		<p>This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media.</p>
+		<div id="cookieButtons">
+			<button onclick="enableCookies()">Accept</button>
+			<button onclick="disableCookies()">Decline</button>
+		</div>
+	</div>
+</body>
+</html>

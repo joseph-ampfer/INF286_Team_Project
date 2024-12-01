@@ -151,6 +151,15 @@ form textarea{
 	font-size: 0.75rem;
 }
 
+/* Basic link styling */
+.basicLink {
+	color: rgb(150, 100, 80);
+}
+
+.basicLink:hover, .basicLink:focus, .basicLink:active {
+	color: rgb(120, 80, 60);
+}
+
 /* A small button that creates a drop shadow when hovered over*/
 .dropShadowBtn{
 	margin: 0.5rem;
