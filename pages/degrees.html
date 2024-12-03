@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UAT Redesign</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="../css/nav-bar.css" rel="stylesheet" type="text/css" />
-  <link href="../css/cookie-bar.css" rel="stylesheet" />
-  <script src="../js/general.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UAT Redesign</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="../css/nav-bar.css" rel="stylesheet" type="text/css" />
+	<link href="../css/cookie-bar.css" rel="stylesheet" />
+	<script src="../js/general.js"></script>
 </head>
+
 <body class="flex-1 bg-gray-100 relative">
 	<header>
 		<nav>
@@ -37,37 +39,49 @@
 			</ul>
 		</nav>
 	</header>
-  <main class="pt-6 sm:pt-20 pb-40 ml-4 mr-4 md:max-w-[760px] lg:max-w-[1200px] md:m-auto">
+	<main class="pt-6 sm:pt-20 pb-40 ml-4 mr-4 md:max-w-[760px] lg:max-w-[1200px] md:m-auto">
 		<div id="whole-request-info" class="flex flex-col items-center lg:flex-row lg:items-stretch  justify-center">
-			<div class="flex flex-col justify-end" style="background:url(https://www.uat.edu/media/uat-majors-and-degrees.png);background-size: cover;margin: 0!important;">
+			<div class="flex flex-col justify-end"
+				style="background:url(https://www.uat.edu/media/uat-majors-and-degrees.png);background-size: cover;margin: 0!important;">
 				<div class="p-12">
 					<div class="text-white text-5xl font-semibold mb-4">Advancing Technology Degrees</div>
-					<p class="text-white mb-4">University of Advancing Technology (UAT) delivers collegiate education and real-world training in a variety of technology areas. UAT has developed a vibrant, multifaceted academic environment with a Synchronic Learning model where students are challenged to explore new and traditional concepts, and to independently and collaboratively practice what they learn in real-world situations to achieve their full potential.</p>
+					<p class="text-white mb-4">University of Advancing Technology (UAT) delivers collegiate education and
+						real-world training in a variety of technology areas. UAT has developed a vibrant, multifaceted academic
+						environment with a Synchronic Learning model where students are challenged to explore new and traditional
+						concepts, and to independently and collaboratively practice what they learn in real-world situations to
+						achieve their full potential.</p>
 					<p class="text-white">UAT academic programs result in associate, bachelor or master’s degrees.</p>
 				</div>
 			</div>
 			<div id="request-info" class="bg-gray-200 max-w-[350px]">
 				<div class="p-4">
 					<div class="text-2xl font-bold mb-1">REQUEST INFO</div>
-					<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions about UAT and your advancing technology degree of interest.</p>
+					<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions
+						about UAT and your advancing technology degree of interest.</p>
 					<form class="mt-10">
 						<div class="grid grid-cols-1 gap-4 mb-4">
 							<div>
-								<input required type="text" id="firstname" name="firstname" class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="First Name*">
+								<input required type="text" id="firstname" name="firstname"
+									class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="First Name*">
 							</div>
 							<div>
-								<input required type="text" id="lastname" name="lastname" class="w-full p-2 border-gray-300 rounded-md shadow-sm"  placeholder="Last Name*">
+								<input required type="text" id="lastname" name="lastname"
+									class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="Last Name*">
 							</div>
 							<div>
-								<input required type="text" id="cellphone" name="cellphone" class="w-full p-2 border-gray-300 rounded-md shadow-sm"  placeholder="Phone*" >
+								<input required type="text" id="cellphone" name="cellphone"
+									class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="Phone*">
 							</div>
 							<div>
-								<input required type="email" id="email" name="email" class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="Email*">
+								<input required type="email" id="email" name="email"
+									class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="Email*">
 							</div>
 							<div class="">
-								<input type="checkbox" id="armed-services" name="armed-services" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+								<input type="checkbox" id="armed-services" name="armed-services"
+									class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
 								<label for="armed-services" class="ml-2 text-gray-700 inline">
-										I am currently, or was previously, a member of the United States Armed Services (Active Duty, Reservist, National Guard or Veteran)
+									I am currently, or was previously, a member of the United States Armed Services (Active Duty,
+									Reservist, National Guard or Veteran)
 								</label>
 							</div>
 						</div>
@@ -87,20 +101,22 @@
 		<div id="degrees-container" class="space-y-12"></div>
 
 
-  </main>
+	</main>
 
-  <footer class="absolute bottom-0 w-full bg-black">
-    <div class=" text-white flex flex-col justify-center  items-center">
-      <p>&copy;2024 University of Advancing Technology</p> 
-      <p>All Rights Reserved</p>
-      <p>Redesign by Joey and Mitch</a></p>
-      <p><a class="underline" href="https://www.uat.edu/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()" class="underline cursor-pointer">Cookie Settings</a></p>
-    </div>
-  </footer>
+	<footer class="absolute bottom-0 w-full bg-black">
+		<div class=" text-white flex flex-col justify-center  items-center">
+			<p>&copy;2024 University of Advancing Technology</p>
+			<p>All Rights Reserved</p>
+			<p>Redesign by Joey and Mitch</p>
+			<p><a class="underline" href="https://www.uat.edu/">Go to uat.com</a>&nbsp;<a onclick="showCookieSettings()"
+					class="underline cursor-pointer">Cookie Settings</a></p>
+		</div>
+	</footer>
 
 	<script src="../js/displayDegrees.js"></script>
 	<script>
 		renderDegrees("degrees-container");
 	</script>
 </body>
+
 </html>
