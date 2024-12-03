@@ -14,28 +14,80 @@
 		<nav>
 			<ul class="non-selctable">
 				<li>
-					<a href="index.html" class = "nav-logo"></a>
+					<a href="../index.html" class="nav-logo"></a>
 				</li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Apply</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><p class="non-selectable">Curriculum Info</p>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="apply.html">Apply</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li>
+					<p class="non-selectable">Curriculum Info</p>
 					<ul>
-						<li><a href="#">Degrees</a></li>
-						<li><a href="#">Academic Catalog</a></li>
+						<li><a href="degrees.html">Degrees</a></li>
+						<li><a href="degrees.html">Academic Catalog</a></li>
 					</ul>
 				</li>
 				<li><a href="request-information.html">Request Information</a></li>
-				<li><p class="non-selectable">News and Events</p>
+				<li>
+					<p class="non-selectable">News and Events</p>
 					<ul>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Events</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="events.html">Events</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
 	</header>
-  <main class="">
+  <main class="pt-6 sm:pt-20 pb-40 ml-4 mr-4 md:max-w-[760px] lg:max-w-[1200px] md:m-auto">
+		<div id="whole-request-info" class="flex flex-col items-center lg:flex-row lg:items-stretch  justify-center">
+			<div class="flex flex-col justify-end" style="background:url(https://www.uat.edu/media/uat-majors-and-degrees.png);background-size: cover;margin: 0!important;">
+				<div class="p-12">
+					<div class="text-white text-5xl font-semibold mb-4">Advancing Technology Degrees</div>
+					<p class="text-white mb-4">University of Advancing Technology (UAT) delivers collegiate education and real-world training in a variety of technology areas. UAT has developed a vibrant, multifaceted academic environment with a Synchronic Learning model where students are challenged to explore new and traditional concepts, and to independently and collaboratively practice what they learn in real-world situations to achieve their full potential.</p>
+					<p class="text-white">UAT academic programs result in associate, bachelor or master’s degrees.</p>
+				</div>
+			</div>
+			<div id="request-info" class="bg-gray-200 max-w-[350px]">
+				<div class="p-4">
+					<div class="text-2xl font-bold mb-1">REQUEST INFO</div>
+					<p>Provide your information below and an Admissions Advisor will contact you shortly to answer your questions about UAT and your advancing technology degree of interest.</p>
+					<form class="mt-10">
+						<div class="grid grid-cols-1 gap-4 mb-4">
+							<div>
+								<input required type="text" id="firstname" name="firstname" class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="First Name*">
+							</div>
+							<div>
+								<input required type="text" id="lastname" name="lastname" class="w-full p-2 border-gray-300 rounded-md shadow-sm"  placeholder="Last Name*">
+							</div>
+							<div>
+								<input required type="text" id="cellphone" name="cellphone" class="w-full p-2 border-gray-300 rounded-md shadow-sm"  placeholder="Phone*" >
+							</div>
+							<div>
+								<input required type="email" id="email" name="email" class="w-full p-2 border-gray-300 rounded-md shadow-sm" placeholder="Email*">
+							</div>
+							<div class="">
+								<input type="checkbox" id="armed-services" name="armed-services" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+								<label for="armed-services" class="ml-2 text-gray-700 inline">
+										I am currently, or was previously, a member of the United States Armed Services (Active Duty, Reservist, National Guard or Veteran)
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<button type="submit" class="bg-red-800 text-white w-full p-6  hover:bg-red-700">
+					REQUEST INFO
+				</button>
+			</div>
+		</div>
+
+		<div class="mt-6 mb-10">
+			<div class="text-4xl font-bold mb-1">MAJORS OFFERED</div>
+			<p>All majors are offered online unless indicated otherwise.</p>
+		</div>
+
+		<div id="degrees-container" class="space-y-8">
+		</div>
+
+
   </main>
 
   <footer class="absolute bottom-0 w-full bg-black">
@@ -47,5 +99,9 @@
     </div>
   </footer>
 
+	<script src="../js/displayDegrees.js"></script>
+	<script>
+		renderDegrees("degrees-container");
+	</script>
 </body>
 </html>
