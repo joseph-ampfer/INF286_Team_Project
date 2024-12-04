@@ -1,0 +1,30 @@
+* {
+  color: black !important;
+}
+header {
+  display: none;
+}
+#cookieBar {
+  display: none !important;
+}
+.flex-col.mb-3rem {
+  page-break-inside: auto;
+}
+.card-container, .spec {
+  box-shadow: none;
+  page-break-inside: avoid;
+  justify-content: center;
+}
+.card-container {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+button {
+  display: none;
+}
+.more-info, footer {
+  position: static; 
+  margin-top: 2rem; 
+}
