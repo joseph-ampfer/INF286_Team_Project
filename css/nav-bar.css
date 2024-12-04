@@ -42,6 +42,10 @@ nav a:link:not(.nav-logo), nav p{
 nav a:visited { color: #FFDEDE }
 nav a:hover, nav a:active, nav a:focus { color: #D3DBEB; }
 
+nav .current {
+	color: black !important;
+}
+
 nav p {
 	margin-top: 0;
 	margin-bottom: 0;
