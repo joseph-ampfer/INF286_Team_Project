@@ -203,6 +203,7 @@ form textarea{
 	min-height: 8rem;
 	
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .barButton:hover{
