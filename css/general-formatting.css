@@ -40,6 +40,8 @@ main{
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	justify-content: center;
+	max-width: 1200px;
+	margin: auto;
 }
 
 /*
@@ -220,6 +222,8 @@ form textarea{
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: auto;
 }
 
 /* A table that alternates background color every other cell */
