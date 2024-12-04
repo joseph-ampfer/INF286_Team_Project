@@ -1,0 +1,24 @@
+*{
+	-webkit-print-color-adjust:exact;
+	print-color-adjust:exact;	
+}
+
+#header-spacer{
+	display: none;
+}
+
+header{
+	position: static;
+}
+
+#footerSpacer{
+	display: none;
+}
+
+.downloadContainer{
+	break-inside: avoid;
+}
+
+footer{
+	position: static;
+}
