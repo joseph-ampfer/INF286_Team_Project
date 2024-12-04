@@ -34,12 +34,13 @@ nav li{
 	display: block;
 }
 
-nav a:not(.nav-logo), nav p{
+nav a:link:not(.nav-logo), nav p{
 	text-decoration: none;
 	color: white; 
 }
 
-nav a:hover { color: #D3DBEB; }
+nav a:visited { color: #FFDEDE }
+nav a:hover, nav a:active, nav a:focus { color: #D3DBEB; }
 
 nav p {
 	margin-top: 0;
